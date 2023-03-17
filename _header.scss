@@ -1,0 +1,765 @@
+// header start
+
+.header {
+    width: 250px;
+    height: 68px;
+    transition: 0.5s all;
+
+    &.fullwidth {
+        width: 100%;
+    }
+
+    &.fullwidth nav.navbar {
+        width: 100%;
+    }
+
+    .header_region {
+        width: 250px;
+        display: flex;
+        align-items: center;
+        padding: 17px 20px 18px 36px;
+        height: 82px;
+        position: relative;
+        z-index: 100;
+        // position: fixed;
+
+        &.whiteheader {
+            .header_region_logo {
+                filter: none;
+            }
+
+            .navbar_hamburger {
+                filter: brightness(1) invert(1);
+            }
+
+            .search-icon {
+                filter: brightness(1) invert(1);
+            }
+        }
+
+        &_logo {
+            height: 63px;
+            width: 83px;
+            margin-right: 22px;
+            filter: brightness(0) invert(1);
+        }
+
+        .navbar_hamburger {
+            z-index: 99;
+            position: relative;
+            filter: brightness(0) invert(1);
+            margin-top: -17px;
+
+            &::before {
+                background-image: url(https://washington.org/themes/custom/washington/images/icons/nav_star_white.svg);
+                background-position: center;
+                position: absolute;
+                content: "";
+                width: 12px;
+                height: 11px;
+                display: block;
+                background-repeat: no-repeat;
+
+                right: -23px;
+                bottom: -5px;
+
+                margin: auto;
+                transition: 0.5s;
+                pointer-events: none;
+            }
+
+            label.hamburger {
+                display: block;
+                background: $color-default;
+                width: 23px;
+
+                cursor: pointer;
+            }
+
+            input#hamburger {
+                display: none;
+            }
+
+            .line {
+                position: absolute;
+                height: 2px;
+                width: 100%;
+                background: $color-default;
+            }
+
+            .line:nth-child(1) {
+                top: 12px;
+            }
+
+            .line:nth-child(2) {
+                top: 24px;
+            }
+
+            .line:nth-child(3) {
+                top: 36px;
+            }
+
+            #hamburger:checked+.hamburger .line:nth-child(1) {
+                transform: translateY(12px) rotate(-45deg);
+            }
+
+            #hamburger:checked+.hamburger .line:nth-child(2) {
+                opacity: 0;
+            }
+
+            #hamburger:checked+.hamburger .line:nth-child(3) {
+                transform: translateY(-12px) rotate(45deg);
+            }
+        }
+
+        .close-btn {
+            width: 0;
+            transition: all 0.5s;
+            color: $color-secondary;
+            opacity: 0;
+        }
+
+        .search-icon {
+            border: none;
+
+            position: relative;
+            transition: all 0.5s;
+
+            bottom: -30px;
+
+            &::after {
+                cursor: pointer;
+                content: "";
+                display: inline-block;
+                background: url(https://washington.org/themes/custom/washington/images/icons/search_white.svg);
+                background-size: 22px;
+                background-position: center;
+                position: absolute;
+                width: 22px;
+                height: 22px;
+                bottom: 18px;
+                margin: auto;
+                left: 46px;
+            }
+        }
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        top: 0;
+        padding-top: 31px;
+        height: 82px;
+        width: 0;
+        background: $color-default;
+        transition: 0.5s all;
+        z-index: 1;
+
+        @media screen and (max-width: 768px) and (min-width: 365px) {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            padding-top: 106px;
+        }
+
+        .navbar-expand {
+            @media screen and (max-width: 768px) and (min-width: 365px) {
+                display: none;
+            }
+
+            .navbar-expand_menu {
+                display: flex;
+                gap: 4px;
+
+                font-weight: bold;
+
+                li {
+                    list-style: none;
+                    position: relative;
+                    padding-bottom: 20px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $color-primary;
+                    padding-left: 27px;
+                    font-size: 16px;
+                }
+
+                .visit_card {
+                    height: 100vh;
+                    position: fixed;
+                    left: 0px;
+                    width: 100%;
+                    top: 80px;
+                    display: flex;
+
+                    z-index: 99;
+
+                    .visit_card_box {
+                        display: flex;
+
+                        justify-content: center;
+                        flex-direction: column;
+                        background: linear-gradient(to bottom, #0000002b, #0000002b),
+                            url(image/pic-1.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        height: 100vh;
+                        padding: 17px;
+                        border-right: 3px solid white;
+
+                        h1 {
+                            color: $color-default;
+                            font-weight: bold;
+                            font-size: 28px;
+                            text-align: center;
+                        }
+
+                        .items {
+                            display: flex;
+                        }
+
+                        .plus {
+                            font-size: 22px;
+                            border-radius: 50px;
+                            border: 3px solid white;
+                            width: 30px;
+                            height: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 auto;
+                            color: #fff;
+                        }
+                    }
+
+                    .visit_card_dropdown {
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                        flex-direction: column;
+                        background: linear-gradient(rgba(210, 71, 199, 0.5),
+                                rgba(210, 71, 161, 0.5)),
+                            url(image/pic-1.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        // height: 100vh;
+                        padding: 17px;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        border: 3px solid white;
+
+                        h1 {
+                            color: $color-default;
+                            font-weight: bold;
+                            font-size: 28px;
+                            text-align: center;
+                        }
+
+                        .minus {
+                            font-size: 22px;
+                            border-radius: 50px;
+                            border: 3px solid white;
+                            width: 30px;
+                            height: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 auto;
+                            color: #fff;
+                        }
+                    }
+
+                    .visit_card_dropdown .fa-minus {
+                        padding: 0 140px;
+                        cursor: pointer;
+                    }
+
+                    .visit_card_box .fa-plus {
+                        cursor: pointer;
+                    }
+
+                    .visit_card_list {
+                        padding: 10px;
+                    }
+
+                    .visit_card_dropdown {
+                        .pic_2 {
+                            background: linear-gradient(rgba(210, 71, 199, 0.5),
+                                    rgba(210, 71, 161, 0.5)),
+                                url(image/pic-2.png);
+                            background-size: cover;
+                        }
+
+                        .pic_3 {
+                            background: linear-gradient(rgba(210, 71, 199, 0.5),
+                                    rgba(210, 71, 161, 0.5)),
+                                url(image/pic-3.png);
+                            background-size: cover;
+                        }
+
+                        .pic_4 {
+                            background: linear-gradient(rgba(210, 71, 199, 0.5),
+                                    rgba(210, 71, 161, 0.5)),
+                                url(image/pic-4.png);
+                            background-size: cover;
+                        }
+                    }
+
+                    .pic_2 {
+                        background: linear-gradient(to bottom, #0000002b, #0000002b),
+                            url(image/pic-2.png);
+                        background-size: cover;
+                    }
+
+                    .pic_3 {
+                        background: linear-gradient(to bottom, #0000002b, #0000002b),
+                            url(image/pic-3.png);
+                        background-size: cover;
+                    }
+
+                    .pic_4 {
+                        background: linear-gradient(to bottom, #0000002b, #0000002b),
+                            url(image/pic-4.png);
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+
+    .visit_card li {
+        width: 25%;
+    }
+
+    .social_media_icon {
+        @media screen and (max-width: 768px) and (min-width: 365px) {
+            display: none;
+        }
+
+        .social_media_link {
+            display: flex;
+
+            a {
+                text-decoration: none;
+                color: $color-primary;
+                padding-left: 27px;
+            }
+        }
+    }
+
+    .translator_block_wrapper {
+        margin-top: -14px;
+        letter-spacing: 4px;
+        color: $color-secondary;
+
+        @media screen and (max-width: 768px) and (min-width: 365px) {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: -85px;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        ul li {
+            position: relative;
+            line-height: 30px;
+        }
+
+        ul li a {
+            display: block;
+            padding: 8px 25px;
+            color: $color-secondary;
+            text-decoration: none;
+        }
+
+        ul li ul.dropdown-menu {
+            min-width: 100%;
+            background: $color-default;
+            display: none;
+            position: absolute;
+            z-index: 999;
+            left: 0;
+            margin-left: -40px;
+        }
+
+        ul li ul.dropdown-menu li {
+            display: block;
+        }
+    }
+}
+
+.navbar {
+    .navbar-expand {
+        .navbar-expand_menu {
+            a:hover {
+                color: $color-secondary;
+            }
+        }
+    }
+}
+
+.social_media {
+    .social_media_icon {
+        .social_media_link {
+            a:hover {
+                color: $color-secondary;
+            }
+        }
+    }
+}
+
+// navbar responsive section
+.navbar_mobile {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    .social_medias {
+        .social_medias_icon {
+            .social_medias_link {
+                display: flex;
+                justify-content: center;
+
+                padding: 38px 0;
+
+                a {
+                    text-decoration: none;
+                    color: $color-primary;
+                    padding-left: 27px;
+                }
+            }
+        }
+    }
+
+    .navbar_visit {
+        .navs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2px;
+
+            h1 {
+                padding: 16px 0 0 18px;
+                font-size: 24px;
+                font-weight: bold;
+                font-family: "Poppins", sans-serif;
+            }
+
+            .navbar_plus {
+                font-size: 22px;
+                border-radius: 50px;
+                border: 3px solid gray;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: gray;
+                margin-left: 14px;
+                position: relative;
+                margin-right: 14px;
+
+                .navbar_icon {
+                    position: absolute;
+                    font-size: 37px;
+                    margin-top: -8px;
+                }
+            }
+        }
+    }
+
+    .horizontal_line {
+        hr {
+            width: 90%;
+            height: 2px;
+            position: relative;
+            background: gray;
+
+            margin-bottom: 35px;
+            margin-top: 38px;
+
+            margin-left: -38px;
+
+            &::before {
+                background-image: url(https://washington.org/themes/custom/washington/images/icons/nav_star_white.svg);
+                position: absolute;
+                content: "";
+                width: 13px;
+                height: 13px;
+                background-repeat: no-repeat;
+
+                right: -29px;
+                top: -17px;
+            }
+        }
+    }
+}
+
+.mobile_nav {
+    display: block;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+// header end
+// slick-slider start
+.banner {
+    background: linear-gradient(to bottom, #0000002b, #0000002b),
+        url(image/bigstock-Washington-DC-Jefferson-Memor-39028834.jpg);
+    margin-top: -82px;
+    background-size: cover;
+
+
+    .banner__title {
+        padding-top: 156px;
+        margin-left: 30px;
+        color: $color-default;
+
+        .banner__title__heading {
+            color: $color-default;
+            font-size: 64px;
+            line-height: 70px;
+            text-align: left;
+
+            @media screen and (max-width: 768px) and (min-width: 365px) {
+                font-size: 39px;
+                padding-top: 252px;
+            }
+        }
+
+        .banner__para-title {
+            display: flex;
+            gap: 8px;
+
+            font-size: 21px;
+            line-height: 1.35;
+
+            padding-top: 38px;
+
+            @media screen and (max-width: 768px) and (min-width: 365px) {
+                display: none;
+            }
+
+            .banner__more a {
+                color: white;
+                font-size: 14px;
+                text-decoration: none;
+                padding-left: 6px;
+            }
+
+            i.fa-solid.fa-chevron-right {
+                padding-top: 4px;
+            }
+        }
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        margin-top: 110px;
+
+        @media screen and (max-width: 768px) and (min-width: 365px) {
+            margin-top: 0;
+        }
+    }
+
+    .navigation_bottom {
+        font-size: 22px;
+        border-radius: 50px;
+        border: 3px solid white;
+        width: 46px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        margin-left: 58px;
+        position: relative;
+        margin-right: 58px;
+
+        @media screen and (max-width: 768px) and (min-width: 365px) {
+            border: 0;
+            width: 0;
+            height: 0;
+        }
+
+        &::before {
+            background-image: url(https://washington.org/themes/custom/washington/images/icons/nav_star_white.svg);
+            position: absolute;
+            content: "";
+            width: 13px;
+            height: 13px;
+            background-repeat: no-repeat;
+
+            right: -29px;
+            top: -17px;
+
+            @media screen and (max-width: 768px) and (min-width: 365px) {
+                top: -30px;
+            }
+        }
+    }
+
+    .verticle_line {
+
+
+        hr {
+            width: 2px;
+            height: 66px;
+            margin-top: 38px;
+            position: relative;
+            background: #fff;
+            margin-left: -38px;
+        }
+
+    }
+
+    .explore {
+        color: white;
+        margin-left: -19px;
+        margin-top: 23px;
+        writing-mode: vertical-rl;
+        transform: rotateZ(360deg);
+        font-size: 14px;
+    }
+}
+
+.slider_one {
+    background: url(image/slick_img2.jpg);
+}
+
+.slider_2 {
+    background: url(image/slick_img3.jpg);
+}
+
+.banner_slide {
+    position: relative;
+    margin-top: -67px;
+
+    .slider-for img {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .slick-slide {
+        color: white;
+        // padding: 40px 0;
+        margin: 0;
+        font-size: 30px;
+        font-family: "Arial", "Helvetica";
+        text-align: center;
+    }
+
+    .slick-arrow:before {
+        color: black;
+    }
+
+    .slick-dots {
+        bottom: -30px;
+    }
+
+    .slider {
+        margin: 0 30px;
+    }
+
+    // slick slider small box start
+    .slider-nav {
+        width: 25%;
+        padding: 0px;
+        position: absolute;
+        right: 7px;
+        bottom: -50px;
+
+        @media screen and (max-width: 768px) and (min-width: 365px) {
+            right: -2px;
+            bottom: -118px;
+        }
+    }
+
+    .slider-nav img {
+       
+        width: 100%;
+
+        @media screen and (max-width: 768px) and (min-width: 365px) {
+            display: none;
+        }
+    }
+
+    .slick-next {
+        left: -80px;
+    }
+
+    .slick-prev {
+        left: -140px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        font-size: 0;
+        line-height: 0;
+        top: 84%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-family: "slick";
+        font-size: 62px;
+        line-height: 1;
+        opacity: 0.75;
+        color: #fff;
+
+    }
+
+    .test {
+        background: #7d3269;
+        width: 26%;
+        height: 52px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 1px;
+        padding-top: 11px;
+
+        @media screen and (max-width: 768px) and (min-width: 365px) {
+            width: 66%;
+            position: absolute;
+            margin-left: 118px;
+            margin-top: -162px;
+        }
+        
+
+        //  @media screen and (max-width: 576px) {
+        //   width: 57%;
+        //   margin-left:143px;
+        //   margin-top:-140px;
+        //   position: absolute;
+        //   height: 58px;
+
+        // }
+    }
+
+    button.slick-next.slick-arrow {
+        background-color: #7d3269;
+    }
+
+    .slick-prev:hover,
+    .slick-prev:focus,
+    .slick-next:hover,
+    .slick-next:focus {
+        color: transparent;
+        outline: none;
+        background: #7d3269;
+    }
+}
+
+// slick slider small box end

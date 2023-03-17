@@ -1,0 +1,1756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://kit.fontawesome.com/6505166696.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;0,900;1,400;1,500;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- header start -->
+    <div class="header">
+        <div class="header_region">
+            <div class="header_region_logo ">
+                <img src="image/logo (3).svg" alt="logo">
+            </div>
+            <div class="navbar_hamburger">
+                <input type="checkbox" id="hamburger">
+                <label for="hamburger" class="hamburger ">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </label>
+                <div class="close-btn">CLOSE</div>
+            </div>
+
+            <span class="search-icon"></span>
+        </div>
+
+
+        <nav class="navbar full">
+
+            <div class="navbar-expand">
+                <ul class="navbar-expand_menu">
+                    <li>
+                        <a href="#">Visit DC</a>
+                        <ul class="visit_card" style="display: none">
+                            <li>
+                                <div class="visit_card_box">
+                                    <h1>
+                                        Neighbourhoods
+                                    </h1>
+                                    <div class="plus">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+
+                                </div>
+                                <div class="visit_card_dropdown ">
+                                    <h1>Neighbourhoods</h1>
+                                    <div class="minus">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                    <ul class="visit_card_item">
+                                        <li class="visit_card_list">Adam Morgan</li>
+                                        <li class="visit_card_list">Anacostia</li>
+                                        <li class="visit_card_list">BrookLand</li>
+                                        <li class="visit_card_list">Capitol Hill</li>
+                                        <li class="visit_card_list">Capitol Riverfront</li>
+                                        <li class="visit_card_list">Columbia Front</li>
+                                        <li class="visit_card_list">Columbia Heights</li>
+                                        <li class="visit_card_list">Downtown</li>
+                                        <li class="visit_card_list">Dupont Circle</li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="visit_card_box  pic_2">
+                                    <h1>
+                                        Things to Do
+                                    </h1>
+                                    <div class="plus">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+
+                                </div>
+                                <div class="visit_card_dropdown ">
+                                    <h1> Things to Do</h1>
+                                    <div class="minus">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                    <ul class="visit_card_item">
+                                        <li class="visit_card_list">All Things to do</li>
+                                        <li class="visit_card_list">Art and culture</li>
+                                        <li class="visit_card_list">BrookLand</li>
+                                        <li class="visit_card_list">Capitol Hill</li>
+                                        <li class="visit_card_list">Capitol Riverfront</li>
+                                        <li class="visit_card_list">Columbia Front</li>
+                                        <li class="visit_card_list">Columbia Heights</li>
+                                        <li class="visit_card_list">Downtown</li>
+                                        <li class="visit_card_list">Dupont Circle</li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="visit_card_box pic_3">
+                                    <h1>
+                                        Events
+                                    </h1>
+                                    <div class="plus">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+
+                                </div>
+                                <div class="visit_card_dropdown ">
+                                    <h1>Neighbourhoods</h1>
+                                    <div class="minus">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                    <ul class="visit_card_item">
+                                        <li class="visit_card_list">Adam Morgan</li>
+                                        <li class="visit_card_list">Anacostia</li>
+                                        <li class="visit_card_list">BrookLand</li>
+                                        <li class="visit_card_list">Capitol Hill</li>
+                                        <li class="visit_card_list">Capitol Riverfront</li>
+                                        <li class="visit_card_list">Columbia Front</li>
+                                        <li class="visit_card_list">Columbia Heights</li>
+                                        <li class="visit_card_list">Downtown</li>
+                                        <li class="visit_card_list">Dupont Circle</li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="visit_card_box  pic_4">
+                                    <h1>
+                                        Find Your Stay
+                                    </h1>
+                                    <div class="plus">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+
+                                </div>
+                                <div class="visit_card_dropdown ">
+                                    <h1>Neighbourhoods</h1>
+                                    <div class="minus">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                    <ul class="visit_card_item">
+                                        <li class="visit_card_list">Adam Morgan</li>
+                                        <li class="visit_card_list">Anacostia</li>
+                                        <li class="visit_card_list">BrookLand</li>
+                                        <li class="visit_card_list">Capitol Hill</li>
+                                        <li class="visit_card_list">Capitol Riverfront</li>
+                                        <li class="visit_card_list">Columbia Front</li>
+                                        <li class="visit_card_list">Columbia Heights</li>
+                                        <li class="visit_card_list">Downtown</li>
+                                        <li class="visit_card_list">Dupont Circle</li>
+                                    </ul>
+                                </div>
+
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Meeting</a>
+                    </li>
+                    <li>
+                        <a href="#">Travel Trade</a>
+                    </li>
+                    <li>
+                        <a href="#">Member</a>
+                    </li>
+                    <li>
+                        <a href="#">Press</a>
+                    </li>
+                    <li>
+                        <a href="#">Sports</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="social_media">
+                <div class="social_media_icon">
+                    <div class="social_media_link">
+
+                        <a href="https://www.facebook.com" target="_blank">
+                            <span><i class="fa-brands fa-facebook"></i></span>
+                        </a>
+
+
+                        <a href="https://www.twitter.com" target="_blank">
+                            <span><i class="fa-brands fa-square-twitter"></i></span>
+                        </a>
+
+
+                        <a href="https://www.instagram.com" target="_blank">
+                            <span><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+
+
+                        <a href="https://www.youtube.com" target="_blank">
+                            <span><i class="fa-brands fa-youtube"></i></span>
+                        </a>
+
+
+                        <a href="https://www.tripadvisor.com" target="_blank">
+                            <span><i class="fa-solid fa-car"></i></span>
+                        </a>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="translator_block_wrapper">
+                <ul>
+                    <li class="dropdown-phase1">
+                        <a href="#"><i class="fa-solid fa-earth-americas"></i>
+                            <i class="fa-solid fa-chevron-down"></i> </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Chinese(Simplified)</a></li>
+                            <li><a href="#">Chinese(Traditional)</a></li>
+                            <li><a href="#">French</a></li>
+                            <li><a href="#">German</a></li>
+                            <li><a href="#">Italian</a></li>
+                            <li><a href="#">Japanese</a></li>
+                            <li><a href="#">Korean</a></li>
+                            <li><a href="#">Portuguess</a></li>
+                            <li><a href="#">Spanish</a></li>
+
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <!-- navabar respnsive section -->
+
+            <div class="navbar_mobile">
+
+                <div class="social_medias">
+                    <div class="social_medias_icon">
+                        <div class="social_medias_link">
+
+                            <a href="https://www.facebook.com" target="_blank">
+                                <span><i class="fa-brands fa-facebook"></i></span>
+                            </a>
+
+
+                            <a href="https://www.twitter.com" target="_blank">
+                                <span><i class="fa-brands fa-square-twitter"></i></span>
+                            </a>
+
+
+                            <a href="https://www.instagram.com" target="_blank">
+                                <span><i class="fa-brands fa-instagram"></i></span>
+                            </a>
+
+
+                            <a href="https://www.youtube.com" target="_blank">
+                                <span><i class="fa-brands fa-youtube"></i></span>
+                            </a>
+
+
+                            <a href="https://www.tripadvisor.com" target="_blank">
+                                <span><i class="fa-solid fa-car"></i></span>
+                            </a>
+
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="navbar_visit">
+                    <div class="navbar_neighborhood navs">
+                        <h1>
+                            Neighbourhoods
+                        </h1>
+                        <div class="navbar_plus">
+                            <div class="navbar_icon">+</div>
+                        </div>
+
+                    </div>
+                    <div class="navbar_things navs">
+                        <h1>Things to Do</h1>
+                        <div class="navbar_plus">
+                            <div class="navbar_icon">+</div>
+                        </div>
+                    </div>
+                    <div class="navbar_events navs">
+                        <h1>
+                            Events
+                        </h1>
+                        <div class="navbar_plus">
+                            <div class="navbar_icon">></div>
+                        </div>
+                    </div>
+                    <div class="navbar_find navs">
+                        <h1>Find Your Stay</h1>
+                        <div class="navbar_plus">
+                            <div class="navbar_icon">+</div>
+                        </div>
+                    </div>
+
+                    <div class="horizontal_line">
+
+                        <hr />
+                    </div>
+                    <div class="navbar_meeting navs">
+                        <h1> Meeting</h1>
+                        <div class="navbar_plus">
+                            <div class="navbar_icon">+</div>
+                        </div>
+                    </div>
+                    <div class="navbar_travel navs">
+                        <h1>Travel Trade</h1>
+                        <div class="navbar_plus">
+                            <div class="navbar_icon">+</div>
+                        </div>
+                    </div>
+                    <div class="navbar_member navs">
+                        <h1> Members</h1>
+                        <div class="navbar_plus">
+                            <div class="navbar_icon">+</div>
+                        </div>
+                    </div>
+                    <div class="navbar_press navs">
+                        <h1>Press</h1>
+                        <div class="navbar_plus">
+                            <div class="navbar_icon">+</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </nav>
+    </div>
+    <!-- header end -->
+    <!-- "slick-slider start -->
+    <section class="banner_slide">
+        <div class="slider-for">
+            <div class="banner">
+                <div class="banner__title">
+                    <h1 class=" banner__title__heading">Best of Fall</h1>
+                    <div class="banner__para-title">
+                        <p class=" banner__paragraph">Your ultimate guide to autumn in Washington, DC</p>
+                        <span class=" banner__more"><a href="#">SEE MORE</a></span>
+                        <i class=" fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <div class="navigation_bottom">
+                        <i class="fa-solid fa-angles-down"></i>
+                    </div>
+                    <div class="verticle_line">
+
+                        <hr />
+                    </div>
+                    <p class="explore">EXPLORE</p>
+                </div>
+
+            </div>
+            <!-- slick slider image2 -->
+            <div class="banner  slider_one">
+
+                <div class="banner__title">
+                    <h1 class=" banner__title__heading">The Show Goes On</h1>
+                    <div class="banner__para-title">
+                        <p class=" banner__paragraph">
+
+
+                            With 60+ playhouses, 99+ companies and 180+ productions per year, DC's theater scene is in a
+                            class of its own
+
+                        </p>
+                        <span class=" banner__more"><a href="#">SEE MORE</a></span>
+                        <i class=" fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <div class="navigation_bottom">
+                        <i class="fa-solid fa-angles-down"></i>
+                    </div>
+                    <div class="verticle_line">
+
+                        <hr />
+                    </div>
+                    <p class="explore">EXPLORE</p>
+                </div>
+
+            </div>
+            <!-- slick slider image3 -->
+            <div class="banner  slider_2 ">
+
+                <div class="banner__title">
+                    <h1 class=" banner__title__heading">
+                        Guide to Black History & Culture in DC
+                    </h1>
+                    <div class="banner__para-title">
+                        <p class=" banner__paragraph">
+
+
+                            Celebrate the cultural significance of African Americans to DC, the nation and beyond.
+
+
+
+                        </p>
+                        <span class=" banner__more"><a href="#">SEE MORE</a></span>
+                        <i class=" fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <div class="navigation_bottom">
+                        <i class="fa-solid fa-angles-down"></i>
+                    </div>
+                    <div class="verticle_line">
+
+                        <hr />
+                    </div>
+                    <p class="explore">EXPLORE</p>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- slick slider small box start -->
+        <div class="slider-nav">
+            <div>
+                <img src="image/slick_img2.jpg" style="width: 100%" />
+            </div>
+            <div>
+                <img src="image/slick_img3.jpg" style="width: 100%" />
+            </div>
+
+            <div>
+                <img src="image/bigstock-Washington-DC-Jefferson-Memor-39028834.jpg" style="width: 100%" />
+            </div>
+
+        </div>
+        <!-- slick slider small box start end -->
+    </section>
+    <!-- slick slider end-->
+
+    <!-- welcome to washington_section  start-->
+
+    <section class="welcome">
+        <div class="container">
+            <div class="welcome_title">
+                <span class="taxonomy__icon">
+                    <img src="image/taxonomu.png" alt="">
+                </span>
+                <h5>Welcome to Washington, DC</h5>
+                <h2>When was the last time you made a memory in DC?</h2>
+                <p>Imagine this: A captivating morning paddle on the Potomac River. An afternoon spent roaming the
+                    hallsof a Smithsonian museum. An evening enjoying one of DC’s iconic sports teams. A monumental meal
+                    at a
+                    Michelin-starred restaurant.</p>
+                <p>&nbsp;</p>
+                <p>
+                    No matter how you spend your time in the nation’s capital,
+                    you're sure to leave with lifelong memories.</p>
+                <div class="btn_primary">
+                    <div class="button__inner">
+                        <a href="#">I'M IN.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="instagram_img">
+                <img src="image/temple.jpg" alt="photo">
+                <div class="instagram_username">
+                    <p> @richfeola</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- welcome to washington_section end -->
+    <!-- find out exploredc_slider start -->
+    <section class="washington_section">
+        <div class="exploredc_wrapper">
+            <div class="exploredc_header">
+
+                <h1 class="title">
+                    Find Out What's Popular Right Now
+                </h1>
+            </div>
+            <div class="exploredc_slider">
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Día de los Muertos In &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Día de los Muertos In &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Día de los Muertos In &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Día de los Muertos In &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Día de los Muertos In &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Día de los Muertos In &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Día de los Muertos In &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Día de los Muertos In &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+        </div>
+    </section>
+    <!-- find out / exploredc_slider end -->
+
+    <!-- Let’s take /washington_section start -->
+    <section class="washington_section  inbox_Section">
+        <div class="exploredc_wrapper">
+            <div class="exploredc_header">
+
+                <h1 class="title">
+                    <h3 class="label label--label">
+                        Let’s Take This to Your Inbox &amp; Mailbox
+                    </h3>
+                </h1>
+            </div>
+            <div class="exploredc_slider">
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/slicker1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle card_body_subtitles">
+                        <h4><span>Order Your Free Visitors Guide</span>
+                        </h4>
+                        <p>
+                            Learn why DC is a one of the best cities in the United States
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/slicker2.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle card_body_subtitles">
+                        <h4><span>Receive the DC Insider eNewsletter</span>
+                        </h4>
+                        <p>
+                            A monthly email of trip inspiration, discounts, insider tips for vis...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/slicker3.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle  card_body_subtitles">
+                        <h4>
+                            <span>Sign up for the DC on eNewsletter</span>
+
+                        </h4>
+                        <p>
+                            <p class="card-text card-text--">
+                                A bi-weekly email curated exclusively for locals
+                            </p>
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+        </div>
+    </section>
+    <!-- Let’s take /washington_section end -->
+    <!-- main section start -->
+    <section class="featured_section">
+
+        <div class="featured_content">
+
+            <div class=featured_card_wrapper ">
+                <div>
+                    <div class=" featured_card_img">
+                <img src="image/library.jpg" alt="">
+            </div>
+            <div class="featured_card_box">
+                <div class="card_label">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h6>
+                        Dupont Circle
+                    </h6>
+                </div>
+
+                <div class="horizontal">
+                    <hr>
+                </div>
+                <h1>
+                    Secret Door Tour
+                </h1>
+                <div class="btn_secondary">
+
+                    <div class="button__inner">
+                        <a href="#"> VIEW DETAILS</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="featured_card_img">
+            <img src="image/overlay2.jpg" alt="">
+        </div>
+
+        <div class="featured_card_img">
+            <img src="image/overlay1.jpg" alt="">
+        </div>
+
+
+
+
+        </div>
+        <div class="featured_info_wrapper">
+            <div class="featured_featuredevent">
+                <img src="image/icons8-movie-ticket-30.png" alt="">
+                <p>
+                    Featured Events
+                </p>
+            </div>
+            <div class="horizontal_line">
+
+                <hr>
+
+                <img src="image/icons8-christmas-star-50.png" alt="">
+            </div>
+            <h3 class="featured_title">
+                Here's what's going on in Washington, DC
+            </h3>
+            <p class="featured_subtitle">
+                Discover the best things to do in Washington, DC, from events happening right now to annual
+                festivals and so much more.
+            </p>
+            <div class="featured-btn">
+                <div class="slick_desktop_arrows">
+                    <!-- <div class="slick_previous">
+                            <div class="previous_rollover_wrapper slick_wrapper">
+                                <i class="fa-solid fa-chevron-left"></i>
+
+                            </div>
+                        </div>
+                        <div class="slick_next ">
+                            <div class="next_rollover_wrapper slick_wrapper">
+                                <i class="fa-solid fa-chevron-right "></i>
+
+                            </div> -->
+                </div>
+
+
+                <div class="featured_button">
+                    <div class="button__inner">
+                        <a href="#">VIEW ALL EVENTS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        </div>
+    </section>
+    <!-- main section end -->
+
+
+    <!-- layout row image start -->
+    <section class="layout ">
+        <div class="layout_region">
+            <div class="layout_container">
+
+                <div class="layout__row">
+                    <h2 class="layout_title">
+                        Hotels That it Your Style
+                    </h2>
+
+                    <div class="layout_button">
+                        <div class="button__inner">
+                            <a href="#">SEE MORE</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- "layout_hover image start -->
+        <div class="grid_card">
+            <div class="content">
+                <section>
+                    <div class="longcard_content">
+                        <img class="longcard_image" src="image/layout_img1.jpg" alt="layout-image" />
+                        <div class="longcard_body">
+                            <div class="longcard_title">
+                                <h3 class="longcard_subheading">
+                                    Make a Difference at DC's Sustainable Hotels
+                                </h3>
+                                <p class="longcard_paragraph">
+                                    Go green on your next vacation with these eco-friendly places
+                                    to stay in Washington, DC
+                                </p>
+                            </div>
+                            <!-- <div class="navigation">
+    
+                        <div class="verticle_line">
+    
+                            <hr />
+                        </div>
+                        <p class="explore">READ MORE</p>
+                    </div> -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="content">
+                <section>
+                    <div class="longcard_content">
+                        <img class="longcard_image" src="image/layout_img2.jpg" alt="layout-image" />
+                        <div class="longcard_body">
+                            <div class="longcard_title">
+                                <h3 class="longcard_subheading">
+                                    The Most Charming Boutique Hotels
+                                </h3>
+                                <p class="longcard_paragraph">
+                                    Find the best boutique hotel in Washington,DC
+                                </p>
+                            </div>
+                            <!-- <div class="navigation">
+    
+                        <div class="verticle_line">
+    
+                            <hr />
+                        </div>
+                        <p class="explore">READ MORE</p>
+                    </div> -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="content">
+                <section>
+                    <div class="longcard_content">
+                        <img class="longcard_image" src="image/layout_img3.jpg" alt="layout-image" />
+                        <div class="longcard_body">
+                            <div class="longcard_title">
+                                <h3 class="longcard_subheading">
+                                    14 Kid-Friendly Hotel In Washington ,DC
+                                </h3>
+                                <p class="longcard_paragraph">
+                                    Book an unforgettable family vacation at one of these hotels in the nation's
+                                    capital.
+                                </p>
+                            </div>
+                            <!-- <div class="navigation">
+    
+                        <div class="verticle_line">
+    
+                            <hr />
+                        </div>
+                        <p class="explore">READ MORE</p>
+                    </div> -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <!-- layout row image end -->
+
+    <!-- iconic washington dc start -->
+    <section class="washington_section iconic_section">
+        <div class="exploredc_wrapper">
+            <div class="exploredc_header">
+
+                <h1 class="title">
+                    Iconic Washington,DC
+                </h1>
+            </div>
+            <div class="exploredc_slider">
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/iconic1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle  iconic_body_subtitle">
+                        <h4>Visit the US Capitoll
+                        </h4>
+                        <p> The Capitol Visitor Center is the main entrance to the U.S. Capitol ...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/iconic2.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Explore the Many Smithsonian Museums
+                        </h4>
+                        <p> History,science,art and culture come alive at these free DC...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/iconic3.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Gorge at The-Worthy Michelin Star Restaurants
+                        </h4>
+                        <p>For roving gastronomes and travelers who revel in experience...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+        </div>
+
+
+    </section>
+    <!-- iconic washington dc  end -->
+    <section class="layout ">
+        <div class="layout_region">
+            <div class="layout_container">
+
+                <div class="layout__row">
+                    <h2 class="layout_title">
+                        Hotels That it Your Style
+                    </h2>
+
+                    <div class="layout_button">
+                        <div class="button__inner">
+                            <a href="#">SEE MORE</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- "layout2_hover image start -->
+        <div class="grid_card">
+            <div class="content">
+                <section>
+                    <div class="longcard_content">
+                        <img class="longcard_image" src="image/layout_img1.jpg" alt="layout-image" />
+                        <div class="longcard_body">
+                            <div class="longcard_title">
+                                <h3 class="longcard_subheading">
+                                    Make a Difference at DC's Sustainable Hotels
+                                </h3>
+                                <p class="longcard_paragraph">
+                                    Go green on your next vacation with these eco-friendly places
+                                    to stay in Washington, DC
+                                </p>
+                            </div>
+                            <!-- <div class="navigation">
+    
+                        <div class="verticle_line">
+    
+                            <hr />
+                        </div>
+                        <p class="explore">READ MORE</p>
+                    </div> -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="content">
+                <section>
+                    <div class="longcard_content">
+                        <img class="longcard_image" src="image/layout_img2.jpg" alt="layout-image" />
+                        <div class="longcard_body">
+                            <div class="longcard_title">
+                                <h3 class="longcard_subheading">
+                                    The Most Charming Boutique Hotels
+                                </h3>
+                                <p class="longcard_paragraph">
+                                    Find the best boutique hotel in Washington,DC
+                                </p>
+                            </div>
+                            <!-- <div class="navigation">
+    
+                        <div class="verticle_line">
+    
+                            <hr />
+                        </div>
+                        <p class="explore">READ MORE</p>
+                    </div> -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="content">
+                <section>
+                    <div class="longcard_content">
+                        <img class="longcard_image" src="image/layout_img3.jpg" alt="layout-image" />
+                        <div class="longcard_body">
+                            <div class="longcard_title">
+                                <h3 class="longcard_subheading">
+                                    14 Kid-Friendly Hotel In Washington ,DC
+                                </h3>
+                                <p class="longcard_paragraph">
+                                    Book an unforgettable family vacation at one of these hotels in the nation's
+                                    capital.
+                                </p>
+                            </div>
+                            <!-- <div class="navigation">
+    
+                        <div class="verticle_line">
+    
+                            <hr />
+                        </div>
+                        <p class="explore">READ MORE</p>
+                    </div> -->
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- layout2_hover image end -->
+    <!-- Featured washington dc start -->
+    <section class="washington_section featured__section">
+        <div class="exploredc_wrapper">
+            <div class="exploredc_header">
+
+                <h1 class="title">
+                    Featured ltineraries
+                </h1>
+            </div>
+            <div class="exploredc_slider">
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/iconic1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>3 Days of Holiday Wonder in Washington,DC
+                        </h4>
+                        <p> The holiday are a magical time to plan a trip to the District.Disc...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/iconic2.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Explore the Many Smithsonian Museums
+                        </h4>
+                        <p> History,science,art and culture come alive at these free DC ...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/iconic3.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Gorge at The-Worthy Michelin Star Restaurants
+                        </h4>
+                        <p>For roving gastronomes and travelers who revel in experience...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+        </div>
+
+    </section>
+    <!-- Featured washington dc  end -->
+    <!-- Explore our Neighbourhoods start -->
+
+
+
+
+    <!-- Explore our Neighbourhoods  end -->
+    <!-- DC in news start -->
+    <section class="washington_section news_section">
+        <div class="exploredc_wrapper">
+            <div class="exploredc_header">
+
+                <h1 class="title">
+                    DC in the News
+                </h1>
+            </div>
+            <div class="exploredc_slider">
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/layout3_image.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>The Best Cities in the U.S.:2022 Readers'
+                            Choice Awards
+                        </h4>
+                        <p> Conde Nast Traveler</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/layout3_img2.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>The Best Cities in the United States in 2022</h4>
+                        <p> AFAR</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/layout3_img3.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>22 of the best pplaces to travel to in the U.S. in 2022
+                        </h4>
+                        <p>Business Insider</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Día de los Muertos In &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Día de los Muertos In &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Día de los Muertos In &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Día de los Muertos In &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                        <a href="#" class="btn" role="button">READ MORE</a>
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+
+                    <div class="card_body_subtitle">
+                        <h4>Ways to Celebrate Halloween &amp; Día de los Muertos In &amp; Around Washington, DC
+                        </h4>
+                        <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+        </div>
+
+    </section>
+    <!-- DC in news  end -->
+    <!-- DC gallery fancy image start -->
+    <section class="dc_gallary">
+        <div class="dc_gallary_container">
+            <div class="row">
+                <div class="row_fancy_image">
+                    <img src="image/fancy1.jpg" class="fancy-1" alt="">
+                    <div class="card_img_gradient">
+                        <p class="instagram_username">
+                            <i class="fa-brands fa-instagram"></i>
+                            <a href="http://instagram.com"> @lgomez66</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row_fancybox_image">
+                    <img src="image/fancy3.jpg" class="fancy-3" alt="">
+                    <div class="card_img_gradient">
+                        <p class="instagram_username">
+                            <i class="fa-brands fa-instagram"></i>
+                            <a href="http://instagram.com"> @melissamurphy131</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row_secondary">
+                <div class="row_fancy_text">
+                    <h3 class="row_heading">
+                        Share Your #MyDCcool Story
+                    </h3>
+                    <p class="row_paragraph">
+
+                        During your time in DC, you’re sure to have unforgettable experiences. Pictures are worth a
+                        thousand words, so make sure to share your favorite moments in the District with #MyDCcool, from
+                        moon-lit monument tours to decadent meals to museum marvels.
+
+                    </p>
+
+                </div>
+                <div class="row_icons">
+                    <div class="horizontal_line">
+                        <hr>
+                    </div>
+                    <div class="row_media">
+                        <div class="row_media_icon">
+                            <div class="row_media_link">
+
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <span><i class="fa-brands fa-facebook"></i></span>
+                                </a>
+
+
+                                <a href="https://www.twitter.com" target="_blank">
+                                    <span><i class="fa-brands fa-square-twitter"></i></span>
+                                </a>
+
+                                <a href="https://www.youtube.com" target="_blank">
+                                    <span><i class="fa-brands fa-youtube"></i></span>
+                                </a>
+
+
+                                <a href="https://www.instagram.com" target="_blank">
+                                    <span><i class="fa-brands fa-instagram" style="color: black;"></i></span>
+                                </a>
+
+
+
+
+
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="row_fancy_image">
+                        <img src="image/fancy4.jpg" class="fancy-1" alt="">
+                        <div class="card_img_gradient">
+                            <p class="instagram_username">
+                                <i class="fa-brands fa-instagram"></i>
+                                <a href="http://instagram.com"> @lr_hkap202</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="vertical_line">
+                        <hr>
+
+                    </div>
+
+                    <div class="btn_primary">
+                        <div class="button__inner">
+                            <a href="#">LOAD MORE</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="row_fancybox ">
+                <div class="row_fancybox_image">
+                    <img src="image/fancy2.jpg" class="fancy-3" alt="">
+                    <div class="card_img_gradient">
+                        <p class="instagram_username">
+                            <i class="fa-brands fa-instagram"></i>
+                            <a href="http://instagram.com"> @melissamurphy131</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row_fancy">
+                    <img src="image/fancy5.jpg" class="fancy-1" alt="">
+                    <div class="card_img_gradient">
+                        <p class="instagram_username">
+                            <i class="fa-brands fa-instagram"></i>
+                            <a href="http://instagram.com"> @lgomez66</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DC gallery fancy image end -->
+    <!-- three card with cross button start -->
+    <section class="close_btn_card">
+
+        <div class="container">
+
+            <div class="card">
+                <a href="#" class="close-thik">
+                    <img src="image/close_btn_card.png" alt="">
+                </a>
+            </div>
+
+
+
+            <div class="card">
+                <div class="card_body">
+                    <div class="card_body_overlay">
+                    </div>
+                    <img src="image/overlay1.jpg" alt="overlay-1">
+                </div>
+
+                <div class="card_body_subtitle">
+                    <h4>Holiday in DC's Old Town
+                    </h4>
+
+                    <p> The DC area has a wealth of events and festivals for all ages and pr...</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="#" class="close-thik">
+                    <img src="image/close_btn_card1.jpg" alt="">
+                </a>
+            </div>
+            <div class="card_text">
+                <h1>PARTNER CONTENT</h1>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- three card body with cross button end -->
+
+    <!-- Footer section start -->
+    <div class="main_footer">
+
+        <div class="main_row">
+            <div class="footer_background"></div>
+            <div class="main_footer_social-media">
+                <div class="footer_top">
+                    <div>
+                        <div class="subscription">
+                            <p class="subscription_title">Become a DC Insider:</p>
+                            <form action="/action_page.php">
+                                <input type="text" id="fname" name="fname" value="Enter eMail Address" /><br />
+
+                                <input type="submit" value="NEXT" />
+                            </form>
+                        </div>
+                        <div class="mobile_logo">
+                            <div class="footer_brand">
+                                <div class="header_branding">
+                                    <img src="image/logo (3).svg" alt="logo" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer_top_socialmedia">
+                            <h2>Follow Us :</h2>
+                            <ul class="footer_top_list">
+                                <li>
+                                    <a href="https://www.facebook.com" target="_blank">
+                                        <span><i class="fa-brands fa-facebook"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com" target="_blank">
+                                        <span><i class="fa-brands fa-square-twitter"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com" target="_blank">
+                                        <span><i class="fa-brands fa-youtube"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com" target="_blank">
+                                        <span><i class="fa-brands fa-instagram"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tripadvisor.com" target="_blank">
+                                        <span><i class="fa-solid fa-car"></i></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_contact">
+                <div class="footer_brand">
+                    <div class="header_branding">
+                        <img src="image/logo (3).svg" alt="logo" />
+                    </div>
+                </div>
+                <div class="footer_link">
+
+                    <div class="footer_top_menu">
+                        <ul class="menu">
+                            <li class="menu_item">
+                                <i class="fa-sharp fa-solid fa-book-open"></i>
+                                <a href="https://washington.org/visitors-guide" class="menu_link">
+                                    FREE VISITOR GUIDE
+                                </a>
+                            </li>
+
+                            <li class="menu_item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="https://washington.org/visitors-guide" class="menu_link">
+                                    EMAIL SIGN UP
+                                </a>
+                            </li>
+
+                            <li class="menu_item">
+                                <i class="fa-brands fa-accessible-icon"></i>
+                                <a href="https://washington.org/visitors-guide" class="menu_link">
+                                    ACCESSIBLE TOURISM GUIDE
+                                </a>
+                            </li>
+
+                            <li class="menu_item">
+                                <i class="fa-solid fa-lock"></i>
+                                <a href="https://washington.org/visitors-guide" class="menu_link">
+                                    MEMBER LOGIN
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr />
+
+                    <div class="footer_middle_menu">
+                        <ul class="menu">
+                            <li class="menu_item">
+
+                                <a href="https://washington.org/visitors-guide" class="menu_link">
+                                    9017th Street NW, 4th Floor, Washington,DC 20001-3719
+                                </a>
+                            </li>
+
+                            <li class="menu_item">
+
+                                <a href="https://washington.org/visitors-guide" class="menu_link">
+                                    202-789-7000
+                                </a>
+                            </li>
+
+                            <li class="menu_item">
+
+                                <a href="https://washington.org/visitors-guide" class="menu_link">
+                                    Fax: 202-533-0103
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="footer_last_menu">
+
+                        <ul class="menu footer_nav">
+                            <li class="menu_item">
+                                <i class="fa-regular fa-copyright"></i>
+                                <a href="https://washington.org/visitors-guide" class="menu_link">
+                                    2022 Washington.org.All Right Reserved
+                                </a>
+                            </li>
+
+                            <li class="menu_item">
+
+                                <a href="https://washington.org/visitors-guide" class="menu_link">
+                                    Privacy Policy
+                                </a>
+                            </li>
+
+                            <li class="menu_item">
+
+                                <a href="https://washington.org/visitors-guide" class="menu_link">
+                                    About
+                                </a>
+                            </li>
+                            <li class="menu_item">
+
+                                <a href="https://washington.org/visitors-guide" class="menu_link">
+                                    Contact
+                                </a>
+                            </li>
+                            <li class="menu_item">
+
+                                <a href="https://washington.org/visitors-guide" class="menu_link">
+                                    Transportation
+                                </a>
+                            </li>
+                            <li class="menu_item">
+
+                                <a href="https://washington.org/visitors-guide" class="menu_link">
+                                    Research
+                                </a>
+                            </li>
+                        </ul>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section start -->
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
